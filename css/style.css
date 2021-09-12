@@ -1,0 +1,238 @@
+/*  
+Project Name: Daily Drink Water
+Description: Set your Daily Drinking Water intake. Give me a thumbs-up, If you like it. Enjoy!
+Author: Abdul Samad
+Author URI: https://getabdulsamad.com/
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@400;500;600&display=swap');
+/* font-family: 'Mali', cursive; */
+
+:root {
+  --border-color: #144fc6;
+  --fill-color: #6ab3f8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: transparent linear-gradient(91deg, #85c1e9 0%, #aed6f1 100%);
+  font-family: 'Mali', cursive;
+  margin: 0;
+  height: 100vh;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.container {
+  color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px 80px 20px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+}
+
+.heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.heading h1 {
+  font-size: 34px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-text-shadow: 1px 1px rgba(0, 0, 0, 0.24);
+  -moz-text-shadow: 1px 1px rgba(0, 0, 0, 0.24);
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.24);
+}
+
+.main-content {
+  width: 100%;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-gap: 20px;
+  -moz-gap: 20px;
+  gap: 20px;
+}
+
+.left-box,
+.right-box {
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  flex: 1;
+}
+
+.achieved-goal-header h3 {
+  font-size: 34px;
+  text-align: center;
+  font-weight: 500;
+  text-align: center;
+  -webkit-text-shadow: 1px 1px rgba(0, 0, 0, 0.24);
+  -moz-text-shadow: 1px 1px rgba(0, 0, 0, 0.24);
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.24);
+  margin: 0;
+}
+
+.achieved-goal-header p {
+  margin: 5px 0 20px 0;
+  text-align: center;
+}
+
+.glass {
+  background-color: #fff;
+  border: 4px solid var(--border-color);
+  color: var(--border-color);
+  text-align: center;
+  border-radius: 0 0 40px 40px;
+  width: 250px;
+  height: 365px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.glass.small-glass {
+  width: 23%;
+  height: 200px;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  margin-bottom: 2%;
+  border-radius: 0 0 30px 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.glass.small-glass.full {
+  background-color: var(--fill-color);
+  color: #fff;
+}
+
+.total-goal-achieved .glass {
+  margin: 0 auto;
+}
+
+.goal-water-glasses {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  flex-direction: row;
+  -webkit-gap: 2%;
+  -moz-gap: 2%;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-gap: 2%;
+  -moz-gap: 2%;
+  gap: 2%;
+}
+
+.goal-header {
+  text-align: center;
+}
+
+.remained {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+  flex: 1;
+  text-align: center;
+  transition: 0.3s ease;
+  align-items: center;
+}
+
+.remained span {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.remained small {
+  font-size: 16px;
+}
+
+.percentage {
+  background-color: var(--fill-color);
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  height: 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+/*** Mobile Styling Starts From Here ***/
+@media only screen and (max-width: 991px) {
+  .glass.small-glass {
+    width: 31.33%;
+    height: 180px;
+  }
+  .heading h1,
+  .achieved-goal-header h3 {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-content {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+  }
+  .glass.small-glass {
+    width: 21.33%;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .glass.small-glass {
+    height: 180px;
+  }
+}
